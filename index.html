@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Result Analyzer</title>
+</head>
+
+<body>
+
+<h1>Student Result Analyzer</h1>
+
+<input id="name" placeholder="Enter Name">
+
+<br><br>
+
+<input id="marks" placeholder="Enter Marks">
+
+<br><br>
+
+<button onclick="check()">Check Result</button>
+
+<h2 id="result"></h2>
+
+<script>
+
+function check()
+{
+let marks=document.getElementById("marks").value;
+
+if(marks>=35)
+{
+document.getElementById("result").innerHTML="PASS";
+}
+else
+{
+document.getElementById("result").innerHTML="FAIL";
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
